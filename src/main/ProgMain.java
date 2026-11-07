@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ProgMain {
     public static void main(String[] args) {
-        System.out.println("This is MediaList, your CLI logger for your favorite movies, shows and anime!!");
+        displayBanner();
         Scanner sc = new Scanner(System.in);
         ArrayList<MediaItem> mediaList = new ArrayList<>();
         MediaItem media =  createMediaItem(sc);
@@ -55,11 +55,42 @@ public class ProgMain {
             System.out.println("Enter your " + type.toString().toLowerCase() + ": ");
             media.setName(sc.nextLine());
 
-            System.out.println("Enter the release date: ");
-            media.setReleaseDate(sc.nextLine());
+            System.out.println("Enter the release year: ");
+            media.setYear(Integer.parseInt(sc.nextLine()));
 
 
         }
         return media;
     }//end createItem func
+
+
+    public static void displayBanner() {
+        System.out.println("""
+    
+    __  __          _ _         _     _     _
+    |  \\/  | ___  __| (_) __ _  | |   (_)___| |_
+    | |\\/| |/ _ \\/ _` | |/ _` | | |   | / __| __|
+    | |  | |  __/ (_| | | (_| | | |___| \\__ \\ |_
+    |_|  |_|\\___|\\__,_|_|\\__,_| |_____|_|___/\\__|
+    
+    +------------------------------------------------------------+
+    |                                                            |
+    |                  YOUR PERSONAL MEDIA HUB                   |
+    |                                                            |
+    |              MOVIES  |  ANIME  |  TV SHOWS                  |
+    |                         CARTOONS                           |
+    |                                                            |
+    +------------------------------------------------------------+
+    |                                                            |
+    |                  WELCOME TO MEDIALIST!                     |
+    |                                                            |
+    |          Keep track of everything you watch.               |
+    |       Organize your favorites. Build your collection.      |
+    |                                                            |
+    |             YOUR COLLECTION. YOUR STORY.                   |
+    |                                                            |
+    +------------------------------------------------------------+
+    
+    """);
+    }
 }

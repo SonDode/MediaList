@@ -1,18 +1,16 @@
 package main;
 
-import java.util.Locale;
-
 public class MediaItem {
     private long id;
     private long userId;
     private MediaType type;
     protected String name;
-    protected String releaseDate;
+    protected int year;
     protected String director;
 
 
     public MediaItem() {}
-     public void setType (MediaType type) {
+    public void setType (MediaType type) {
          this.type = type;
      }
 
@@ -20,11 +18,11 @@ public class MediaItem {
         this.name = name;
     }
 
-    public void setReleaseDate(String releaseDate) {
-        this.releaseDate = releaseDate;
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public void displayItem(){
-        System.out.println("The " + type.toString().toLowerCase() + " you entered: \n"+ name +"\nThe release date is: \n" + releaseDate);
+        System.out.println("The " + type.toString().toLowerCase() + " you entered: \n"+ name +"\nThe release date is: \n" + year);
     }
 }
