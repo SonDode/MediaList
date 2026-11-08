@@ -5,6 +5,14 @@ import java.util.Scanner;
 
 public class ProgMain {
     public static void main(String[] args) {
+
+        try (var connection = DatabaseConnection.getConnection()){
+//            System.out.println("Connected succesfully to SQLite");
+        } catch (Exception e){
+//            System.out.println("Didn't connect to the database");
+            e.printStackTrace();
+        }
+
         displayBanner();
         Scanner sc = new Scanner(System.in);
         ArrayList<MediaItem> mediaList = new ArrayList<>();
@@ -17,11 +25,11 @@ public class ProgMain {
 
     public static MediaItem createMediaItem(Scanner sc) {
         MediaType type = null;
+        MediaItem media = null;
         boolean contor = true;
 
-        MediaItem media = null;
         while (contor) {
-            System.out.println("Enter media type(MOVIE, ANIME, TVSHOW, CARTOON): ");
+            System.out.println("Enter media type (MOVIE, ANIME, TVSHOW, CARTOON): ");
 
             try {
                 type = MediaType.valueOf(sc.nextLine().trim().toUpperCase());
