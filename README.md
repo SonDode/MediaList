@@ -21,6 +21,11 @@ I have yet to think about how will the CLI interface look, and how you will add 
 - Added new functionalities, like: `status`, `rating`, `director`, `description`, which right are just database fields/columns, and will be added in the future.
 
 
+### Third day
+- I refactored all the code in the right packages.
+
+- I added a new field to the MediaStatus Enum, which is: Want to watch.
+
 
 ### What I'll do next (this bullet is always for the next time I'm working on the project, so I don't forget what to do!!)
 
