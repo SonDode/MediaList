@@ -1,6 +1,6 @@
-package main;
+package model;
 
-public class Cartoon extends MediaItem{
+public class Cartoon extends MediaItem {
     private int episodes;
     public Cartoon() {super();}
 }

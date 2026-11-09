@@ -1,7 +1,8 @@
-package main;
+package enums;
 
 public enum MediaStatus {
     WATCHED,
     WATCHING,
-    DROPPED
+    DROPPED,
+    WANT_TO_WATCH
 }

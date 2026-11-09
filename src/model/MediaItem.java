@@ -1,4 +1,6 @@
-package main;
+package model;
+
+import enums.MediaType;
 
 public class MediaItem {
     private long id;

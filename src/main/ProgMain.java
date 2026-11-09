@@ -1,5 +1,9 @@
 package main;
 
+import model.*;
+import database.DatabaseConnection;
+import enums.MediaType;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
