@@ -1,0 +1,10 @@
+model/Anime.class
+database/DatabaseConnection.class
+model/TvShow.class
+model/Cartoon.class
+model/MediaItem.class
+main/ProgMain.class
+model/Movie.class
+enums/MediaType.class
+main/ProgMain$1.class
+enums/MediaStatus.class
