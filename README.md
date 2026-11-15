@@ -28,6 +28,7 @@ I have yet to think about how will the CLI interface look, and how you will add 
 
 
 ### What I'll do next (this bullet is always for the next time I'm working on the project, so I don't forget what to do!!)
+- implement the APIs so that I can get the data of the movies and map the name given by the user with the database.
 
--implement the APIs so that I can get the data of the movies and map the name given by the user with the database.
-
+### Forth day
+- migrated the project to Maven, configured pom.xml, adopted the standard directory structure, added the SQLite JDBC dependency and Maven plugins, and verified successful compilation.
